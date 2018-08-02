@@ -37,6 +37,9 @@ def perform_min_time():
             abs_file_paths = [mount + "/" + file_path for file_path in file_paths]
 
             # Combine all files into one (as different bands -> make sure they can be put on top of each other)
+            path_time_stack_vrt = "job_out/stack_time_vrt/products_mount.vrt"
+            path_time_stack_tif = "job_out/stack_time_tif/products_mount.tif"
+            path_min_time = "job_out/out_min-time/min-time.tif"
             gdal.BuildVRT(path_time_stack_vrt, abs_file_paths, separate=True)
             gdal.Translate(path_time_stack_tif, path_time_stack_vrt)
 

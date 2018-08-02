@@ -3,30 +3,29 @@
 import json
 from os import path, makedirs, listdir
 
-CONFIG_FILE = "job_config/config.json"
-IN_MOUNTS_FILE = "job_config/input_mounts.json"
+CONFIG_FILE = "test_config.json"
+IN_MOUNTS_FILE = "input_mounts.json"
 
 
 def read_parameters():
     ''' Return parameters from config file '''
-
-#    with open(CONFIG_FILE) as json_file:
-#        parameters = json.load(json_file)
-#    
-#    input_mounts = read_input_mounts()
-#    for mount in input_mounts:
-#        with open(mount + "/files.json") as json_file:
-#            for key, value in json.load(json_file).items():
-#                parameters[key] = value
-    parameters = {"data_srs": "s2a_prd_msil1c"}
+    with open(CONFIG_FILE) as json_file:
+        parameters = json.load(json_file)
+    
+    input_mounts = read_input_mounts()
+    for mount in input_mounts:
+        with open(mount + "/files.json") as json_file:
+            for key, value in json.load(json_file).items():
+                parameters[key] = value
+#    parameters = {"data_srs": "s2a_prd_msil1c"}
     return parameters
 
 
 def read_input_mounts():
     ''' Return parameters from config file '''
 
-#    with open(IN_MOUNTS_FILE) as json_file:
-#        input_mounts = json.load(json_file)
+    with open(IN_MOUNTS_FILE) as json_file:
+        input_mounts = json.load(json_file)
 
     return ["/data/products"]
 

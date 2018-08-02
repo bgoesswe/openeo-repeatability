@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eop:Mask xmlns:eop="http://www.opengis.net/eop/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="S2A_OPER_MSK_DETFOO_SGS__20180206T011111_A013712_T48CWV_B01_MSIL1C">
+  <gml:name>MSK_DETFOO pixels mask from data-strip S2A_OPER_MSK_DETFOO_SGS__20180206T011111_A013712_T48CWV_B01_MSIL1C</gml:name>
+  <gml:boundedBy>
+    <gml:Envelope srsName="urn:ogc:def:crs:EPSG:8.7:32748">
+      <gml:lowerCorner>545857.5890891824 1390241.517677094 0</gml:lowerCorner>
+      <gml:upperCorner>609780 1500040 0</gml:upperCorner>
+    </gml:Envelope>
+  </gml:boundedBy>
+  <eop:maskMembers>
+    <eop:MaskFeature gml:id="detector_footprint-B01-01-0">
+      <eop:maskType codeSpace="urn:gs2:S2PDGS:maskType">DETECTOR_FOOTPRINT</eop:maskType>
+      <eop:extentOf>
+        <gml:Polygon gml:id="DETECTOR_FOOTPRINT.0_Polygon">
+          <gml:exterior>
+            <gml:LinearRing>
+              <gml:posList srsDimension="3">609780.0 1482478.734919277252629 0 603923.172942171455361 1477788.19380280491896 0 590858.769515564199537 1467327.547632598783821 0 577802.535372355137952 1456858.174879077356309 0 564755.997705750050955 1446360.452464893693104 0 563886.257687588920817 1445654.572474307380617 0 545857.589089182438329 1466394.300205424195156 0 546727.536184972617775 1467100.712375436676666 0 559778.365737545886077 1477605.363026692532003 0 572839.653672069311142 1488080.462712935637683 0 585908.218732768204063 1498548.26837510522455 0 587770.433844460058026 1500040.0 0 609780 1500040 0 609780.0 1482478.734919277252629 0</gml:posList>
+            </gml:LinearRing>
+          </gml:exterior>
+        </gml:Polygon>
+      </eop:extentOf>
+    </eop:MaskFeature>
+    <eop:MaskFeature gml:id="detector_footprint-B01-02-1">
+      <eop:maskType codeSpace="urn:gs2:S2PDGS:maskType">DETECTOR_FOOTPRINT</eop:maskType>
+      <eop:extentOf>
+        <gml:Polygon gml:id="DETECTOR_FOOTPRINT.1_Polygon">
+          <gml:exterior>
+            <gml:LinearRing>
+              <gml:posList srsDimension="3">609780.0 1450420.47261322545819 0 606527.129506912780926 1447820.599835464032367 0 593472.538235140149482 1437365.316487067146227 0 580428.832382163614966 1426896.998818122781813 0 579557.369585673441179 1426193.947821506066248 0 561736.434511184925213 1446557.783194289077073 0 562608.219032321940176 1447261.256039389641955 0 575656.347363002947532 1457736.01084183040075 0 588715.654221800505184 1468197.628572679823264 0 601781.27753897337243 1478642.264718752121553 0 609780.0 1485024.190342689165846 0 609780.0 1450420.47261322545819 0</gml:posList>
+            </gml:LinearRing>
+          </gml:exterior>
+        </gml:Polygon>
+      </eop:extentOf>
+    </eop:MaskFeature>
+    <eop:MaskFeature gml:id="detector_footprint-B01-03-2">
+      <eop:maskType codeSpace="urn:gs2:S2PDGS:maskType">DETECTOR_FOOTPRINT</eop:maskType>
+      <eop:extentOf>
+        <gml:Polygon gml:id="DETECTOR_FOOTPRINT.2_Polygon">
+          <gml:exterior>
+            <gml:LinearRing>
+              <gml:posList srsDimension="3">609780.0 1417903.512556659756228 0 597635.373106489540078 1408138.566357427276671 0 596766.605803442187607 1407433.09593281429261 0 579676.151888966676779 1427689.154013761552051 0 580545.181511137983762 1428395.098159110173583 0 593588.667979050544091 1438885.429143275134265 0 606642.472336862585507 1449347.84726935159415 0 609780.0 1451860.025518320966512 0 609780.0 1417903.512556659756228 0</gml:posList>
+            </gml:LinearRing>
+          </gml:exterior>
+        </gml:Polygon>
+      </eop:extentOf>
+    </eop:MaskFeature>
+    <eop:MaskFeature gml:id="detector_footprint-B01-04-3">
+      <eop:maskType codeSpace="urn:gs2:S2PDGS:maskType">DETECTOR_FOOTPRINT</eop:maskType>
+      <eop:extentOf>
+        <gml:Polygon gml:id="DETECTOR_FOOTPRINT.3_Polygon">
+          <gml:exterior>
+            <gml:LinearRing>
+              <gml:posList srsDimension="3">609780.0 1390241.517677094321698 0 594748.977511943900026 1408105.579029913526028 0 595620.035878762486391 1408807.909451872808859 0 608660.099071600707248 1419271.014228222891688 0 609780.0 1420168.120067911921069 0 609780.0 1390241.517677094321698 0</gml:posList>
+            </gml:LinearRing>
+          </gml:exterior>
+        </gml:Polygon>
+      </eop:extentOf>
+    </eop:MaskFeature>
+  </eop:maskMembers>
+</eop:Mask>

@@ -1,0 +1,27 @@
+def merge_reprojected():
+    '''Merges all reprojected files and applies bbox'''
+
+    print("-> Start merging...")
+
+    # Create Out folder
+    TEMP_FOLDERS["merged"] = create_folder(OUT_FOLDER, "06_merged")
+
+    PARAMS["bbox_out_epsg"] = None
+
+    for day in listdir(TEMP_FOLDERS["unzipped"]):
+
+        # Get input path
+        file_path_list = get_paths_for_files_in_folder("{0}/{1}/".format(TEMP_FOLDERS["reproject"], day))
+
+        # Build output path
+        out_filename = "filter-s2_{0}_epsg-{1}.vrt".format(day, OUT_EPSG)
+        out_path = "{0}/{1}".format(TEMP_FOLDERS["merged"], out_filename)
+
+        if PARAMS["bbox_out_epsg"] is None:
+            PARAMS["bbox_out_epsg"] = get_bbox()
+
+        # Merge all files into one vrt-file
+        gdal.BuildVRT(out_path, file_path_list, outputBounds=PARAMS["bbox_out_epsg"])
+        print(" - Merged {0}".format(out_filename))
+
+    print("-> Finished merging.")

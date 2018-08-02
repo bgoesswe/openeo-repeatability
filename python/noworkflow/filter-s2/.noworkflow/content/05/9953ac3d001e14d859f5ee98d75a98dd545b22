@@ -1,0 +1,30 @@
+def combine_bands():
+    '''Combines all specified bands per file'''
+
+    print("-> Start combining bands...")
+
+    # Create Out folder
+    TEMP_FOLDERS["combined_bands"] = create_folder(OUT_FOLDER, "03_combined_bands")
+
+    # Iterate over each day
+    for day in listdir(TEMP_FOLDERS["unzipped"]):
+
+        # Create one folder per day
+        folder_day = create_folder(TEMP_FOLDERS["combined_bands"], day)
+
+        # Iterate over each granule
+        for granule in listdir("{0}/{1}".format(TEMP_FOLDERS["extracted"], day)):
+
+            # Get list of input files
+            band_path_list = get_paths_for_files_in_folder("{0}/{1}/{2}/".format(TEMP_FOLDERS["extracted"], day, granule))
+            band_path_list.sort()  # make sure bands are always in same order
+
+            # Build out_path (filename without file extension and band number)
+            out_filename = "{0}.vrt".format(band_path_list[0].split("/")[-1].split(".")[0][:-4])
+            out_path = "{0}/{1}".format(folder_day, out_filename)
+
+            # Combine all dataset bands in one vrt-file
+            gdal.BuildVRT(out_path, band_path_list, separate=True, srcNodata=0)
+            print(" - Combined bands for {0}".format(out_filename))
+
+    print("-> Finished combining bands.")

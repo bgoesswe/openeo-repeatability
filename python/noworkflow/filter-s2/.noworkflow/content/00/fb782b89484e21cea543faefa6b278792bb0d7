@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eop:Mask xmlns:eop="http://www.opengis.net/eop/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="S2A_OPER_MSK_NODATA_SGS__20180206T011111_A013712_T48CWV_B01_MSIL1C">
+  <gml:name>MSK_NODATA pixels mask from data-strip S2A_OPER_MSK_NODATA_SGS__20180206T011111_A013712_T48CWV_B01_MSIL1C</gml:name>
+  <gml:boundedBy>
+    <gml:Envelope srsName="urn:ogc:def:crs:EPSG:8.7:32748">
+      <gml:lowerCorner>530352.0437716111 1394144.005202709 3448.958351516136</gml:lowerCorner>
+      <gml:upperCorner>589885.7753203504 1460039.279368423 3517.86380669832</gml:upperCorner>
+    </gml:Envelope>
+  </gml:boundedBy>
+  <eop:maskMembers>
+    <eop:MaskFeature gml:id="QT_NODATA_PIXELS-D01.0">
+      <eop:maskType codeSpace="urn:gs2:S2PDGS:maskType">QT_NODATA_PIXELS</eop:maskType>
+      <eop:extentOf>
+        <gml:Polygon gml:id="QT_NODATA_PIXELS.0_Polygon">
+          <gml:exterior>
+            <gml:LinearRing>
+              <gml:posList srsDimension="3">536321.49389607377816 1457912.608481217175722 3502.440108137541756 530352.043771611060947 1453110.048294937238097 3517.863806698319877 548413.084005249198526 1432340.699405008926988 3498.995535138955347 557020.930535416468047 1439265.987105401232839 3478.608019846848038 538963.222793770837598 1460039.279368422925472 3497.809760497835214 536321.49389607377816 1457912.608481217175722 3502.440108137541756</gml:posList>
+            </gml:LinearRing>
+          </gml:exterior>
+        </gml:Polygon>
+      </eop:extentOf>
+    </eop:MaskFeature>
+    <eop:MaskFeature gml:id="QT_NODATA_PIXELS-D03.1">
+      <eop:maskType codeSpace="urn:gs2:S2PDGS:maskType">QT_NODATA_PIXELS</eop:maskType>
+      <eop:extentOf>
+        <gml:Polygon gml:id="QT_NODATA_PIXELS.1_Polygon">
+          <gml:exterior>
+            <gml:LinearRing>
+              <gml:posList srsDimension="3">569974.916388019337319 1419114.271633833646774 3473.946914216589903 564155.3502879004227 1414436.578770615160465 3479.527688041447618 581282.528248480637558 1394144.005202708765864 3461.523488205712965 589885.775320350425318 1401059.391958922147751 3448.958351516135735 572762.1864236012334 1421355.653668539598584 3467.907031124714194 569974.916388019337319 1419114.271633833646774 3473.946914216589903</gml:posList>
+            </gml:LinearRing>
+          </gml:exterior>
+        </gml:Polygon>
+      </eop:extentOf>
+    </eop:MaskFeature>
+  </eop:maskMembers>
+</eop:Mask>

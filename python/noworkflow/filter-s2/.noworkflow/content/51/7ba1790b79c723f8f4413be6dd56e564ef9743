@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eop:Mask xmlns:eop="http://www.opengis.net/eop/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="S2A_OPER_MSK_NODATA_SGS__20180206T011111_A013712_T48CWV_B12_MSIL1C">
+  <gml:name>MSK_NODATA pixels mask from data-strip S2A_OPER_MSK_NODATA_SGS__20180206T011111_A013712_T48CWV_B12_MSIL1C</gml:name>
+  <gml:boundedBy>
+    <gml:Envelope srsName="urn:ogc:def:crs:EPSG:8.7:32748">
+      <gml:lowerCorner>529148.5666738632 1390240 1709.944316726243</gml:lowerCorner>
+      <gml:upperCorner>609780 1459228.132918511 3517.748965059602</gml:upperCorner>
+    </gml:Envelope>
+  </gml:boundedBy>
+  <eop:maskMembers>
+    <eop:MaskFeature gml:id="QT_NODATA_PIXELS-D01.0">
+      <eop:maskType codeSpace="urn:gs2:S2PDGS:maskType">QT_NODATA_PIXELS</eop:maskType>
+      <eop:extentOf>
+        <gml:Polygon gml:id="QT_NODATA_PIXELS.0_Polygon">
+          <gml:exterior>
+            <gml:LinearRing>
+              <gml:posList srsDimension="3">535118.506431461079046 1457100.803116332739592 3507.826592075479311 529148.566673863213509 1452299.073311237618327 3517.748965059601687 547225.83878774556797 1431522.934776596724987 3502.048891984359216 555571.738542863749899 1438239.519944695755839 3481.67244494922852 537497.917622125009075 1459019.13933845795691 3499.811798990048828 535118.506431461079046 1457100.803116332739592 3507.826592075479311</gml:posList>
+            </gml:LinearRing>
+          </gml:exterior>
+        </gml:Polygon>
+      </eop:extentOf>
+    </eop:MaskFeature>
+    <eop:MaskFeature gml:id="QT_NODATA_PIXELS-D03.1">
+      <eop:maskType codeSpace="urn:gs2:S2PDGS:maskType">QT_NODATA_PIXELS</eop:maskType>
+      <eop:extentOf>
+        <gml:Polygon gml:id="QT_NODATA_PIXELS.1_Polygon">
+          <gml:exterior>
+            <gml:LinearRing>
+              <gml:posList srsDimension="3">568800.892619856749661 1418322.152699345722795 3475.062270262515085 562981.48274354939349 1413644.235126869753003 3481.292639148612579 580119.607943864306435 1393345.174844037741423 3462.320095661328196 588199.838944962364621 1399843.245624477043748 3451.023935547934343 571065.101936093415134 1420145.758193811401725 3470.97394209912045 568800.892619856749661 1418322.152699345722795 3475.062270262515085</gml:posList>
+            </gml:LinearRing>
+          </gml:exterior>
+        </gml:Polygon>
+      </eop:extentOf>
+    </eop:MaskFeature>
+    <eop:MaskFeature gml:id="QT_PARTIALLY_CORRECTED_PIXELS-D04.0">
+      <eop:maskType codeSpace="urn:gs2:S2PDGS:maskType">QT_PARTIALLY_CORRECTED_PIXELS</eop:maskType>
+      <eop:extentOf>
+        <gml:Polygon gml:id="QT_PARTIALLY_CORRECTED_PIXELS.0_Polygon">
+          <gml:exterior>
+            <gml:LinearRing>
+              <gml:posList srsDimension="3">609415.942304444732144 1390240.0 1710.462720844425803 609780.0 1390531.592005430255085 1710.25544038520502 609780.0 1390490.209984959568828 1709.944316726242732 609467.726833558757789 1390240.0 1710.120103740689046 609415.942304444732144 1390240.0 1710.462720844425803</gml:posList>
+            </gml:LinearRing>
+          </gml:exterior>
+        </gml:Polygon>
+      </eop:extentOf>
+    </eop:MaskFeature>
+    <eop:MaskFeature gml:id="QT_PARTIALLY_CORRECTED_PIXELS-D01.1">
+      <eop:maskType codeSpace="urn:gs2:S2PDGS:maskType">QT_PARTIALLY_CORRECTED_PIXELS</eop:maskType>
+      <eop:extentOf>
+        <gml:Polygon gml:id="QT_PARTIALLY_CORRECTED_PIXELS.1_Polygon">
+          <gml:exterior>
+            <gml:LinearRing>
+              <gml:posList srsDimension="3">537759.803422314813361 1459228.132918510586023 3499.810206170187485 537497.917622125009075 1459019.13933845795691 3499.811798990048828 543655.192384435562417 1451976.664880853146315 3491.149621154237138 543917.034482865012251 1452185.629303354769945 3491.138108208214362 537759.803422314813361 1459228.132918510586023 3499.810206170187485</gml:posList>
+            </gml:LinearRing>
+          </gml:exterior>
+        </gml:Polygon>
+      </eop:extentOf>
+    </eop:MaskFeature>
+    <eop:MaskFeature gml:id="QT_PARTIALLY_CORRECTED_PIXELS-D01.2">
+      <eop:maskType codeSpace="urn:gs2:S2PDGS:maskType">QT_PARTIALLY_CORRECTED_PIXELS</eop:maskType>
+      <eop:extentOf>
+        <gml:Polygon gml:id="QT_PARTIALLY_CORRECTED_PIXELS.2_Polygon">
+          <gml:exterior>
+            <gml:LinearRing>
+              <gml:posList srsDimension="3">543931.273198954295367 1452169.299148978665471 3491.137555510211769 543669.431199265876785 1451960.334798647090793 3491.149069110390883 547387.617230524192564 1447688.978137515485287 3494.943367582606243 547649.341078376513906 1447898.074267523363233 3493.991408154039163 543931.273198954295367 1452169.299148978665471 3491.137555510211769</gml:posList>
+            </gml:LinearRing>
+          </gml:exterior>
+        </gml:Polygon>
+      </eop:extentOf>
+    </eop:MaskFeature>
+    <eop:MaskFeature gml:id="QT_PARTIALLY_CORRECTED_PIXELS-D01.3">
+      <eop:maskType codeSpace="urn:gs2:S2PDGS:maskType">QT_PARTIALLY_CORRECTED_PIXELS</eop:maskType>
+      <eop:extentOf>
+        <gml:Polygon gml:id="QT_PARTIALLY_CORRECTED_PIXELS.3_Polygon">
+          <gml:exterior>
+            <gml:LinearRing>
+              <gml:posList srsDimension="3">547663.482884996104985 1447881.802769742906094 3493.990848563222244 547401.741888246848248 1447672.734862891957164 3494.767338444392408 555571.738542863749899 1438239.519944695755839 3481.67244494922852 555833.450006707455032 1438448.503536125645041 3481.110546235139736 547663.482884996104985 1447881.802769742906094 3493.990848563222244</gml:posList>
+            </gml:LinearRing>
+          </gml:exterior>
+        </gml:Polygon>
+      </eop:extentOf>
+    </eop:MaskFeature>
+    <eop:MaskFeature gml:id="QT_PARTIALLY_CORRECTED_PIXELS-D03.4">
+      <eop:maskType codeSpace="urn:gs2:S2PDGS:maskType">QT_PARTIALLY_CORRECTED_PIXELS</eop:maskType>
+      <eop:extentOf>
+        <gml:Polygon gml:id="QT_PARTIALLY_CORRECTED_PIXELS.4_Polygon">
+          <gml:exterior>
+            <gml:LinearRing>
+              <gml:posList srsDimension="3">571588.163410800392739 1420563.48614969663322 3469.953618235310842 571065.101936093415134 1420145.758193811401725 3470.97394209912045 588199.838944962364621 1399843.245624477043748 3451.023935547934343 588722.682183312019333 1400260.747893108054996 3450.003928888427708 571588.163410800392739 1420563.48614969663322 3469.953618235310842</gml:posList>
+            </gml:LinearRing>
+          </gml:exterior>
+        </gml:Polygon>
+      </eop:extentOf>
+    </eop:MaskFeature>
+  </eop:maskMembers>
+</eop:Mask>

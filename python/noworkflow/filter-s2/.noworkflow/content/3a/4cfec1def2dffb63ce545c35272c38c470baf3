@@ -1,0 +1,36 @@
+def combine_same_utm():
+    '''Combines all files within one UTM zone in on vrt-file (per day)'''
+
+    print("-> Start combining same UTM zone...")
+
+    # Create Out folder
+    TEMP_FOLDERS["utm"] = create_folder(OUT_FOLDER, "04_combined_utm")
+
+    # iterate over each day
+    for day in listdir(TEMP_FOLDERS["unzipped"]):
+
+        # Create one folder per day
+        folder_day = create_folder(TEMP_FOLDERS["utm"], day)
+
+        # Sort files after their UTM zone
+        zones = {}
+        for file in listdir("{0}/{1}".format(TEMP_FOLDERS["combined_bands"], day)):
+            file_path = "{0}/{1}/{2}".format(TEMP_FOLDERS["combined_bands"], day, file)
+
+            cur_zone = file[1:3]
+            if cur_zone not in zones:
+                zones[cur_zone] = [file_path]
+            else:
+                zones[cur_zone].append(file_path)
+
+        # Iterate over UTM zones in dict
+        for zone in zones.keys():
+            # Build out_path
+            out_filename = "T{0}_{1}.vrt".format(zone, day)
+            out_path = "{0}/{1}".format(folder_day, out_filename)
+
+            # Merge all vrt-files inside one UTM zone
+            gdal.BuildVRT(out_path, zones[zone])
+            print(" - Combined UTM for {0}".format(out_filename))
+
+    print("-> Finished combining same UTM zone.")

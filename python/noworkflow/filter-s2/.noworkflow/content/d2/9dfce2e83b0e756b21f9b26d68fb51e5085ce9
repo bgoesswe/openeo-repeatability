@@ -1,0 +1,162 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+		body{
+  
+		  color: #003388;
+		}
+		.box-table-a {
+		    border-collapse: collapse;
+		    font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+		    font-size: 12px;
+		    margin: 10px;
+		    text-align: left;
+		    width: 90%;
+		}
+		
+		
+		.box-table-a th{
+		    background: none repeat scroll 0 0 #B9C9FE;
+		    border-bottom: 1px solid #FFFFFF;
+		    border-top: 4px solid #AABCFE;
+		    color: #003399;
+		    font-size: 13px;
+		    font-weight: normal;
+		    padding: 8px;
+		}
+		
+		
+		.box-table-a td {
+		    background: none repeat scroll 0 0 #E8EDFF;
+		    border-bottom: 1px solid #FFFFFF;
+		    border-top: 1px solid rgba(0, 0, 0, 0);
+		    color: #666699;
+		    padding: 8px;
+		}
+		
+		
+		pre {
+		    border-bottom: 1px solid #CCCCCC;
+		    color: #666699;
+		    padding: 6px 8px;
+		}
+	</style>
+</head>
+<TABLE cellSpacing="0" cellPadding="0" border="0" width="90%" ID="page_header">
+<TR>
+<tr style="background-image:url(./star_bg.jpg)">
+<td><img src="banner_1.png" width="100%" height="132" align="left"></td><td><img src="banner_2.png" width="100%" height="132"></td><td><img src="banner_3.png" width="100%" height="132" align="right"></td>
+</tr>
+</TR>
+</TABLE>
+<body>
+<h1>User product metadata</h1>
+<h2>Product Info</h2>
+<table class="box-table-a">
+<tr>
+<th>Product uri</th><th>Processing level</th><th>Product type</th><th>Processing baseline</th><th>Generation time</th><th>Preview image url</th>
+</tr>
+<tr>
+<td>S2A_MSIL1C_20180206T000751_N0206_R130_T48CWV_20180206T011111.SAFE</td><td>Level-1C</td><td>S2MSI1C</td><td>02.06</td><td>2018-02-06T01:11:11.000000Z</td><td><a href="Not applicable">Not applicable</a></td>
+</tr>
+</table>
+<h2>Datatake GS2A_20180206T000751_013712_N02.06</h2>
+<table class="box-table-a">
+<tr>
+<th>Spacecraft name</th><th>Type</th><th>Sensing start</th><th>Sensing stop</th><th>Sensing orbit number</th><th>Sensing orbit direction</th>
+</tr>
+<tr>
+<td>Sentinel-2A</td><td>INS-NOBS</td><td>2018-02-06T00:07:51.026Z</td><td></td><td>130</td><td>DESCENDING</td>
+</tr>
+</table>
+<h2>Query Options</h2>
+<table class="box-table-a">
+<tr>
+<th>Full swath datatake</th><th>Preview image</th><th>Metadata level</th><th>Auxiliary data</th><th>Product format</th><th>Aggregation flag</th>
+</tr>
+<tr>
+<td></td><td></td><td></td><td></td><td>SAFE_COMPACT</td><td></td>
+</tr>
+</table>
+<h3>Selected bands</h3>
+<UL></UL>
+<h2>Granules list</h2>
+    	Granule: S2A_OPER_MSI_L1C_TL_SGS__20180206T011111_A013712_T48CWV_N02.06 Image format: JPEG2000<Pre>	Image file: GRANULE/L1C_T48CWV_A013712_20180206T000750/IMG_DATA/T48CWV_20180206T000751_B01</Pre>
+<Pre>	Image file: GRANULE/L1C_T48CWV_A013712_20180206T000750/IMG_DATA/T48CWV_20180206T000751_B02</Pre>
+<Pre>	Image file: GRANULE/L1C_T48CWV_A013712_20180206T000750/IMG_DATA/T48CWV_20180206T000751_B03</Pre>
+<Pre>	Image file: GRANULE/L1C_T48CWV_A013712_20180206T000750/IMG_DATA/T48CWV_20180206T000751_B04</Pre>
+<Pre>	Image file: GRANULE/L1C_T48CWV_A013712_20180206T000750/IMG_DATA/T48CWV_20180206T000751_B05</Pre>
+<Pre>	Image file: GRANULE/L1C_T48CWV_A013712_20180206T000750/IMG_DATA/T48CWV_20180206T000751_B06</Pre>
+<Pre>	Image file: GRANULE/L1C_T48CWV_A013712_20180206T000750/IMG_DATA/T48CWV_20180206T000751_B07</Pre>
+<Pre>	Image file: GRANULE/L1C_T48CWV_A013712_20180206T000750/IMG_DATA/T48CWV_20180206T000751_B08</Pre>
+<Pre>	Image file: GRANULE/L1C_T48CWV_A013712_20180206T000750/IMG_DATA/T48CWV_20180206T000751_B8A</Pre>
+<Pre>	Image file: GRANULE/L1C_T48CWV_A013712_20180206T000750/IMG_DATA/T48CWV_20180206T000751_B09</Pre>
+<Pre>	Image file: GRANULE/L1C_T48CWV_A013712_20180206T000750/IMG_DATA/T48CWV_20180206T000751_B10</Pre>
+<Pre>	Image file: GRANULE/L1C_T48CWV_A013712_20180206T000750/IMG_DATA/T48CWV_20180206T000751_B11</Pre>
+<Pre>	Image file: GRANULE/L1C_T48CWV_A013712_20180206T000750/IMG_DATA/T48CWV_20180206T000751_B12</Pre>
+<Pre>	Image file: GRANULE/L1C_T48CWV_A013712_20180206T000750/IMG_DATA/T48CWV_20180206T000751_TCI</Pre>
+<br>
+<h2>Product Image Characteristics</h2>
+<table class="box-table-a">
+<tr>
+<th>Physical gains</th><th>Reference band</th><th>On board compression mode</th>
+</tr>
+<tr>
+<td>4.11742139</td><td></td><td></td>
+</tr>
+</table>
+<h2>Geometric info</h2>
+<Pre>Raster CS type: POINT   Pixel origin: 1</Pre>
+<h1>Global Footprint</h1>-77.52298254773918 109.55626081531422 -77.377059694259 108.90446984422752 -77.3734275633776 108.92269936874911 -77.37313128590802 108.9214095614185 -77.37278103067901 108.92314442807148 -77.37256128574056 108.92218926104019 -77.37182067084127 108.92587073094788 -77.36995830302848 108.91778764830569 -77.36945395495465 108.92028776930593 -77.36944026817665 108.92035503499972 -77.36926674742881 108.919602235198 -77.36893192680452 108.9212495587688 -77.21575590300438 108.25708016449384 -77.21614346384452 108.25515219722513 -77.22159990855788 108.22780192841553 -77.04971584051475 107.48886615279793 -77.04659346948213 107.50488633481238 -77.0461143198386 107.50288594095737 -77.04560651646139 107.50546187996032 -77.04519396635622 107.50374386357996 -77.0446060468414 107.50673067321496 -77.0424236753691 107.49766388214259 -77.04199820906514 107.49982100867517 -77.041734458747 107.49872600256643 -77.04173332938336 107.49873173130516 -77.04128561215384 107.50098788032355 -76.87711834555977 106.82012458382609 -76.87119077617281 106.85039267008621 -76.77301482870867 107.34831023656176 -76.67409933924736 107.83948410857859 -76.57428084660161 108.32339467007142 -76.55183912848382 108.42966353770609 -76.54515443077783 109.23000841659542 -77.52298254773918 109.55626081531422 <h1>Coordinate reference system</h1>
+<table class="box-table-a">
+<tr>
+<th>GEO tables</th><th>Horizontal CS type</th><th>Horizontal CS name</th><th>Horizontal CS code</th>
+</tr>
+<tr>
+<td>EPSG</td><td></td><td></td><td></td>
+</tr>
+</table>
+<h2>Geometric header list</h2>
+<h2>Auxiliary_Data</h2>
+<h3>GIPP Files</h3>
+<h3>PRODUCTION DEM TYPE</h3>S2__OPER_DEM_GLOBEF_PDMC_19800101T000000_S19800101T000000<h3>IERS BULLETIN FILENAME</h3>S2__OPER_AUX_UT1UTC_PDMC_20180201T000000_V20180202T000000_20190201T000000<h2>Quality Indicators</h2>
+<h3>Cloud Coverage Assessment: 100.0</h3>
+<h3>Technical Quality Assessment</h3>
+<table class="box-table-a">
+<tr>
+<th>Degraded anc data</th><th>Degraded msi data</th>
+</tr>
+<tr>
+<td>0.0</td><td>0</td>
+</tr>
+</table>
+<h3>Quality Inspection</h3>
+<table class="box-table-a">
+<tr>
+<td>FORMAT_CORRECTNESS</td><td>PASSED</td>
+</tr>
+<tr>
+<td>GENERAL_QUALITY</td><td>PASSED</td>
+</tr>
+<tr>
+<td>GEOMETRIC_QUALITY</td><td>PASSED</td>
+</tr>
+<tr>
+<td>RADIOMETRIC_QUALITY</td><td>PASSED</td>
+</tr>
+<tr>
+<td>SENSOR_QUALITY</td><td>PASSED</td>
+</tr>
+</table>
+<h3>Failed Inspection</h3>
+<table class="box-table-a">
+<tr>
+<th>Data strip report name</th><th>Geometric quality flag</th>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+</table>
+</body>
+</html>

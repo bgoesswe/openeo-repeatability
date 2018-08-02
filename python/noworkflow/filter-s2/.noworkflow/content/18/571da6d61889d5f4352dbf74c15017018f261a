@@ -1,0 +1,46 @@
+def get_bbox():
+    '''Returns bbox in specified reference system
+    :return bbox:[left, bottom, right, top] - array of numbers'''
+
+    bbox_epsg = ARGS["filter_bbox"]["srs"].split(":")[1]
+
+    # Transform bbox coordinates to reference system of data
+    if OUT_EPSG != bbox_epsg:
+
+        # Get spatial reference system of the bbox and the specified one
+        bbox_srs = osr.SpatialReference()
+        bbox_srs.ImportFromEPSG(int(bbox_epsg))
+        data_srs = osr.SpatialReference()
+        data_srs.ImportFromEPSG(int(OUT_EPSG))
+
+        # Get Transformation
+        transform = osr.CoordinateTransformation(bbox_srs, data_srs)
+
+        # Transform all corner points
+        left_bottom = transform.TransformPoint(ARGS["filter_bbox"]["left"], ARGS["filter_bbox"]["bottom"])
+        left_top = transform.TransformPoint(ARGS["filter_bbox"]["left"], ARGS["filter_bbox"]["top"])
+        right_top = transform.TransformPoint(ARGS["filter_bbox"]["right"], ARGS["filter_bbox"]["top"])
+        right_bottom = transform.TransformPoint(ARGS["filter_bbox"]["right"], ARGS["filter_bbox"]["bottom"])
+
+        # Find max/min for each corner
+        left = min(left_bottom[0], left_top[0])
+        right = max(right_bottom[0], right_top[0])
+        bottom = min(left_bottom[1], right_bottom[1])
+        top = max(left_top[1], right_top[1])
+
+        if bottom > top:
+            tmp = bottom
+            bottom = top
+            top = tmp
+
+        if left > right:
+            tmp = right
+            right = left
+            left = tmp
+        
+        return [left, bottom, right, top]
+
+        # return [left, top, right, bottom]
+
+    else:
+        return [ARGS["filter_bbox"]["left"], ARGS["filter_bbox"]["bottom"], ARGS["filter_bbox"]["right"], ARGS["filter_bbox"]["top"]]

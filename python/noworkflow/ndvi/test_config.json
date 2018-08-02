@@ -1,0 +1,23 @@
+{
+
+  "args": {
+      "bands": [8],
+      "file_paths":
+        [
+          {"date": "2018-02-06",
+          "path": "../min-time/job_out/out_min-time/min-time.tif"}
+        ]
+
+    },
+
+  "template_id": "template_id",
+  "product": "Sentinel-2",
+  "operations": ["filter-s2"],
+  "extent": {"left": 652000,
+      "right": 672000,
+      "top": 5161000,
+      "bottom": 5181000,
+    "srs": "EPSG:32632"},
+  "band_order": {"B03": 1},
+  "data_srs": "EPSG:4326"
+}

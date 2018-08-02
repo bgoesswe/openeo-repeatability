@@ -1,0 +1,5 @@
+{
+  "file_paths": ["min-time_DATUM.tif"],
+  "band_order": { "B04": 1, "B08": 1}
+
+}

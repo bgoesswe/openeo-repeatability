@@ -1,0 +1,36 @@
+def write_output():
+    '''Writes output's metadata to file'''
+
+    # TODO Bands in Metadaten -> Übergeben als Parameter / Kein empty array
+    # bands = ARGS["filter_bbox"]["bands"]
+    if not "filter_bbox" in ARGS["filter_bbox"]:
+        bands = ["B01", "B02", "B03", "B04", "B05", "B06", "B07", "B08", "B09", "B10", "B11", "B12", "TCI"]
+    else:
+        bands = ARGS["filter_bbox"]["bands"]
+
+    # save band_order
+    bands.sort()
+    order = range(1, len(bands)+1)
+    band_order = dict(zip(bands, order))
+
+    data = {"product": "Sentinel-2",
+            "operations": ["filter-s2"],
+            "band_order": band_order,
+            "data_srs": "EPSG:{0}".format(OUT_EPSG),
+            "file_paths": get_paths_for_files_in_folder(OUT_FOLDER),
+            "extent": {
+                "bbox": {
+                    "top": ARGS["filter_bbox"]["top"],
+                    "bottom": ARGS["filter_bbox"]["bottom"],
+                    "left": ARGS["filter_bbox"]["left"],
+                    "right": ARGS["filter_bbox"]["right"]},
+                "srs": ARGS["filter_bbox"]["srs"]},
+            }
+
+    #TODO Anders
+    cropped_paths = []
+    for path in data["file_paths"]:
+        cropped_paths.append(path.split("/", 2)[2])
+    data["file_paths"] = cropped_paths
+    
+    write_output_to_json(data, "filter-s2", OUT_FOLDER)

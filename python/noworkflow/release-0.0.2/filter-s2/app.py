@@ -6,7 +6,7 @@ from utils import read_parameters, build_new_img_name_from_old, build_new_granul
     write_output_to_json, get_paths_for_files_in_folder
 
 PARAMS = read_parameters()
-OUT_VOLUME = "job_data"
+OUT_VOLUME = "/data/MASTER/data/job_data"
 
 OUT_FOLDER = create_folder(OUT_VOLUME, PARAMS["template_id"]) 
 TEMP_FOLDERS = {}  # tmp folder: tmp folder path -> deleted in the end
@@ -20,6 +20,7 @@ def unzip_data():
     print("-> Start data unzipping...")
 
     TEMP_FOLDERS["unzipped"] = create_folder(OUT_FOLDER, "01_unzipped")
+    test = ARGS
     for item in ARGS["file_paths"]:
 
         # create a Out folder for each day (eg: /job_out/unzipped/2018-02-06/)

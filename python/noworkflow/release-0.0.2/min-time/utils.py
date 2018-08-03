@@ -3,32 +3,21 @@
 import json
 from os import path, makedirs, listdir
 
-CONFIG_FILE = "test_config.json"
-IN_MOUNTS_FILE = "input_mounts.json"
-
+CONFIG_FILE = "/data/MASTER/data/job_config/config.json"
 
 def read_parameters():
     ''' Return parameters from config file '''
+
     with open(CONFIG_FILE) as json_file:
         parameters = json.load(json_file)
-    
-    input_mounts = read_input_mounts()
-    for mount in input_mounts:
-        with open(mount + "/files.json") as json_file:
-            for key, value in json.load(json_file).items():
-                parameters[key] = value
-#    parameters = {"data_srs": "s2a_prd_msil1c"}
+
     return parameters
 
+def load_last_config(last_folder):
+    with open("{0}/files.json".format(last_folder)) as json_file:
+        config = json.load(json_file)
 
-def read_input_mounts():
-    ''' Return parameters from config file '''
-
-    with open(IN_MOUNTS_FILE) as json_file:
-        input_mounts = json.load(json_file)
-
-    return ["/data/products"]
-
+    return config
 
 def create_folder(base_folder, new_folder):
     '''Creates new_folder inside base_folder if it does not exist'''
@@ -50,4 +39,10 @@ def get_paths_for_files_in_folder(folder_path):
     '''Returns a list of all file paths inside the given folder'''
 
     file_list = listdir(folder_path)
-    return [folder_path + "/" + file for file in file_list]
+
+    files = []
+    for file_path in file_list:
+        if path.isfile(path.join(folder_path, file_path)):
+            files.append("{0}/{1}".format(folder_path, file_path))
+
+    return files

@@ -3,7 +3,7 @@
 import json
 from os import path, makedirs, listdir
 
-CONFIG_FILE = "test_config.json"
+CONFIG_FILE = "/data/MASTER/data/job_config/config.json"
 
 
 def read_parameters():

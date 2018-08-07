@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79546d0-08ae-478e-a88d-091057f072db" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/masterbackend/release-0.0.2/convert/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/python/noworkflow/release-0.0.2/convert/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/python/noworkflow/release-0.0.2/convert_module/Dockerfile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/python/noworkflow/release-0.0.2/convert_module/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/python/noworkflow/release-0.0.2/convert_module/app.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/python/noworkflow/release-0.0.2/convert_module/requirements.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/python/noworkflow/release-0.0.2/convert_module/utils.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/backend/openshift-old/services/job/requirements.txt" afterPath="$PROJECT_DIR$/backend/openshift-old/services/job/requirements.txt" />
-      <change beforePath="$PROJECT_DIR$/backend/openshift-old/template.yaml" afterPath="$PROJECT_DIR$/backend/openshift-old/template.yaml" />
-      <change beforePath="$PROJECT_DIR$/python/.idea/workspace.xml" afterPath="$PROJECT_DIR$/python/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/backend/masterbackend/.idea/workspace.xml" afterPath="$PROJECT_DIR$/backend/masterbackend/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/backend/masterbackend/release-0.0.2/main.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />

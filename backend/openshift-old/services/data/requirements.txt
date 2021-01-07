@@ -10,7 +10,7 @@ Flask-Testing==0.7.1
 idna==2.6
 itsdangerous==0.24
 Jinja2==2.10
-lxml==4.1.1
+lxml==4.6.2
 MarkupSafe==1.0
 numpy==1.14.0
 OWSLib==0.16.0

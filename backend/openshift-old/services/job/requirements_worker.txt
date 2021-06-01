@@ -18,7 +18,7 @@ requests==2.18.4
 simplejson==3.11.1
 six==1.11.0
 SQLAlchemy==1.2.1
-urllib3==1.22
+urllib3==1.26.5
 vine==1.1.4
 win-inet-pton==1.0.1
 wincertstore==0.2

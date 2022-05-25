@@ -33,7 +33,7 @@ pbr==4.0.2
 psycopg2==2.7.4
 pycodestyle==2.4.0
 pycparser==2.18
-PyJWT==1.6.1
+PyJWT==2.4.0
 pylint==1.8.4
 pyproj==1.9.5.1
 python-dateutil==2.7.2

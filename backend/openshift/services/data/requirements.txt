@@ -9,7 +9,7 @@ idna==2.6
 kombu==3.0.37
 mock==2.0.0
 nameko==2.9.0
-numpy==1.14.3
+numpy==1.22.0
 path.py==11.0.1
 pbr==4.0.4
 pyproj==1.9.5.1

@@ -8,7 +8,7 @@ chardet==3.0.4
 cryptography==2.1.4
 idna==2.6
 kombu==4.1.0
-numpy==1.14.1
+numpy==1.22.0
 pycparser==2.18
 pyOpenSSL==17.5.0
 pyproj==1.9.5.1
